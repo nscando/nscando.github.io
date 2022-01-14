@@ -12,7 +12,7 @@ const Hero = (props) => (
         I’m a web & soft­ware devel­op­er from Argentina
       </SectionTitle>
       <SectionText>
-        I have been working as a freelance web designer and software developer since 2013.
+        I have been working as a freelance web designer and software developer since 2016.
       </SectionText>
       <Button onClick={() => window.location = 'https://google.com'}>Learn More</Button>
     </LeftSection>

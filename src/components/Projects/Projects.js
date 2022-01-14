@@ -8,36 +8,33 @@ import { projects } from '../../constants/constants';
 const Projects = () => (
   <Section nopadding id="projects">
     <SectionDivider />
-    <SectionTitle main>
-      Projects
-    </SectionTitle>
+    <SectionTitle main>Projects</SectionTitle>
     <GridContainer>
-      {projects.map(({ id, image, title, description, tags, source, visit }) => (
-        <BlogCard key={id}>
-          <Img src={image} />
-          <TitleContent>
-            <HeaderThree title={title}></HeaderThree>
-            <Hr />
-          </TitleContent>
-          <CardInfo>{description}</CardInfo>
-          <Hr />
-          <div>
-            <TitleContent >
-              Stack
+      {projects.map((p, i) => {
+        return (
+          <BlogCard key={i}>
+            <Img src={p.image} />
+            <TitleContent>
+              <HeaderThree title>{p.title}</HeaderThree>
+              <Hr />
             </TitleContent>
-            <TagList>
-              {tags.map((tag, i) => (
-                <Tag key={i}>{tag}</Tag>
-              ))}
-            </TagList>
-          </div>
-          <UtilityList>
-            <ExternalLinks href={visit}>Code</ExternalLinks>
-          </UtilityList>
-        </BlogCard>
-      ))}
+            <CardInfo className="card-info">{p.description}</CardInfo>
+            <br />
+            <div>
+              <TitleContent><strong>Stack</strong></TitleContent>
+              <TagList>
+                {p.tags.map((t, i) => {
+                  return <Tag key={i}>{t}</Tag>;
+                })}
+              </TagList>
+            </div>
+            <UtilityList>
+              <ExternalLinks href={p.visit}>Code</ExternalLinks>
+            </UtilityList>
+          </BlogCard>
+        );
+      })}
     </GridContainer>
-
   </Section>
 );
 

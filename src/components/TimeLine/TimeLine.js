@@ -3,6 +3,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, CarouselItem, CarouselItemImg, CarouselItemText, CarouselItemTitle, CarouselMobileScrollNode } from './TimeLineStyles';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { TimeLineData } from '../../constants/constants';
+import Button from '../../styles/GlobalComponents/Button';
 
 const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
 
@@ -45,8 +46,10 @@ const Timeline = () => {
     <Section id="about">
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
-        The purpose of JavaScript Mastery is to help aspiring and established developers to take their development skills to the next level and build awesome apps.
+        I have been working as a freelance full stack developer since 2016. I've always been someone who has both a creative and a logical side, which helps me a lot when solving complex situations.
+        When I discovered web design, I realized that it was the perfect job to balance my logic and creativity. This grew even more when I started studying Software Engineering and got into this fabulous world.
       </SectionText>
+
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
           {TimeLineData.map((item, index) => (
@@ -109,6 +112,7 @@ const Timeline = () => {
           </CarouselButton>
         ))}
       </CarouselButtons>
+      <Button onClick={() => window.location = 'https://drive.google.com/file/d/1BRlyq9KnG2q0QPmePc0cNFBuCTFP31cp/view?usp=sharing'}>Resume</Button>
       <SectionDivider />
     </Section>
   );
