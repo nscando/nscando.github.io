@@ -111,7 +111,7 @@ const Timeline = () => {
           </CarouselButton>
         ))}
       </CarouselButtons>
-      <Button onClick={() => window.open("https://drive.google.com/file/d/1BRlyq9KnG2q0QPmePc0cNFBuCTFP31cp/view?usp=sharing", "Resume", "_blank")}>Resume</Button>
+      <Button onClick={() => window.location = "https://drive.google.com/file/d/13l47QLf90KtxKqsAK-ZwT9fiYVr6j8kU/view?usp=sharing"}>Resume</Button>
       <SectionDivider />
     </Section>
   );
