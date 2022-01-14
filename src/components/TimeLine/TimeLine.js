@@ -46,8 +46,7 @@ const Timeline = () => {
     <Section id="about">
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
-        I have been working as a freelance full stack developer since 2016. I've always been someone who has both a creative and a logical side, which helps me a lot when solving complex situations.
-        When I discovered web design, I realized that it was the perfect job to balance my logic and creativity. This grew even more when I started studying Software Engineering and got into this fabulous world.
+        I have been working as a freelance full stack developer since 2016. I consider a creative and a logical person, I've always been someone who has both sides, thats why it helps me a lot when complex situations appears knowing how to handle with it. When I discovered web design, I realized that it was the perfect job to balance my logic and creativity. This grew even more when I started studying Software Engineering and got into this fabulous world.
       </SectionText>
 
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
@@ -112,7 +111,7 @@ const Timeline = () => {
           </CarouselButton>
         ))}
       </CarouselButtons>
-      <Button onClick={() => window.location = 'https://drive.google.com/file/d/1BRlyq9KnG2q0QPmePc0cNFBuCTFP31cp/view?usp=sharing'}>Resume</Button>
+      <Button onClick={() => window.open("https://drive.google.com/file/d/1BRlyq9KnG2q0QPmePc0cNFBuCTFP31cp/view?usp=sharing", "Resume", "_blank")}>Resume</Button>
       <SectionDivider />
     </Section>
   );

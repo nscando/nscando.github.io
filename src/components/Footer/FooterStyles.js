@@ -87,7 +87,7 @@ export const Slogan = styled.p`
 	letter-spacing: 0.02em;
 	font-size: 18px;
 	line-height: 30px;
-	padding: 1rem;
+	
 
 	@media ${props => props.theme.breakpoints.md}{
 		font-size: 16px;
@@ -157,3 +157,10 @@ export const LinkTitle = styled.h4`
 		margin-bottom: 8px;
 	}
 `
+export const Hr = styled.hr`
+  width: 50px;
+  height: 3px;
+  margin: 20px auto;
+  border: 0;
+  background: #d0bb57;
+`;

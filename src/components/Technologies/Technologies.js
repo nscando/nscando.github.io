@@ -1,5 +1,5 @@
 import React from 'react';
-import { DiFirebase, DiReact, DiJava } from 'react-icons/di';
+import { DiFirebase, DiReact, DiAndroid } from 'react-icons/di';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
 
@@ -8,7 +8,7 @@ const Technologies = () => (
     <SectionDivider divider />
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>
-      I've worked with a range a technologies in the web development world.
+      I've worked with a range of technologies in the web development world.
       From Back-end To Design.
     </SectionText>
     <List>
@@ -20,8 +20,8 @@ const Technologies = () => (
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
             Experiece with <br />
-            React.js <br />
-            Angular
+            React.js
+
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -39,7 +39,7 @@ const Technologies = () => (
       </ListItem>
       <ListItem>
         <picture>
-          <DiJava size="4rem" />
+          <DiAndroid size="4rem" />
         </picture>
         <ListContainer>
           <ListTitle>Others</ListTitle>

@@ -19,7 +19,8 @@ const Footer = () => {
       </LinkList>
       <SocialIconsContainer>
         <CompanyContainer>
-          <Slogan>Innovating one project at a time.</Slogan>
+          <Slogan>Nicolás Scandizzo</Slogan>
+          <Slogan>Copyright &copy; {new Date().getFullYear()}</Slogan>
         </CompanyContainer>
         <SocialContainer>
           <SocialIcons href='https://github.com/nscando/'>

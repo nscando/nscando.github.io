@@ -30,8 +30,8 @@ export const projects = [
     image: '/images/1.png',
     tags: ['Mongo', 'Express', 'React', 'Node'],
     source: 'https://google.com',
-    visit: 'https://github.com/nscando/video-app-front',
-    visit: 'https://github.com/nscando/Passport-Authentication',
+    visit: 'https://github.com/nscando/video-app-crud',
+
     id: 3,
   }
 ];
@@ -42,3 +42,4 @@ export const TimeLineData = [
   { year: 2020, text: 'Started my journey in the world of software development', },
   { year: 2021, text: 'Started my bussines', },
 ];
+
